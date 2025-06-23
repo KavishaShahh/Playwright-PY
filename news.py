@@ -33,7 +33,7 @@ class GoogleNewsScraper:
             selectors = [
                 'article h3',
                 'article h4',
-                '[role="heading"]',
+                '[role="heading"]',         
                 'h3 a',
                 'h4 a',
                 '.JtKRv',  # Google News specific class
