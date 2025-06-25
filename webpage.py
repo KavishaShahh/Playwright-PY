@@ -107,7 +107,7 @@ class GoogleNewsScraper:
 
 async def main():
     scraper = GoogleNewsScraper()
-    print("\n Scraping Google News, Please wait.\n")
+    print("\nScraping Google News, Please wait.\n")
     try:
         results = await scraper.scrape_all_sections()
         scraper.save_to_html(results)
