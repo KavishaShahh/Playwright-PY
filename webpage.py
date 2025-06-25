@@ -103,11 +103,11 @@ class GoogleNewsScraper:
         with open("news.html", "w", encoding="utf-8") as f:
             f.write(html)
 
-        print("News saved to news.html. Open it in your browser!")
+        print("News saved to 'news.html'. Open it in your browser!")
 
 async def main():
     scraper = GoogleNewsScraper()
-    print("🔄 Scraping Google News... Please wait...")
+    print("\n Scraping Google News, Please wait.\n")
     try:
         results = await scraper.scrape_all_sections()
         scraper.save_to_html(results)
